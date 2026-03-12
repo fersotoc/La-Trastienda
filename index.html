@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Trastienda | Gestión Financiera</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mentidero: {
+                bg: '#374151',
+                bgGradientStart: '#4B5563',
+                bgGradientEnd: '#1F2937',
+                nav: '#1F2937',
+                emerald: '#065F46',
+                emeraldHover: '#064E3B',
+                emeraldLight: '#D1FAE5',
+                vermilion: '#8E1616',
+                card: '#FFFFFF',
+                gray: '#F9FAFB',
+                darkGray: '#4B5563',
+                textLight: '#F3F4F6',
+                textDark: '#111827'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        body {
+            background: radial-gradient(circle at 50% 50%, #4B5563 0%, #1F2937 100%);
+            background-attachment: fixed;
+            color: #F3F4F6;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(6, 95, 70, 0.5);
+            border-radius: 3px;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "@google/genai": "https://esm.sh/@google/genai@1.41.0",
+    "recharts": "https://esm.sh/recharts@2.15.0",
+    "xlsx": "https://esm.sh/xlsx@0.18.5",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="custom-scrollbar">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
